@@ -4,9 +4,7 @@ import ExerciseList from '../components/ExerciseList';
 import AddButton from '../components/AddButton';
 
 export default class Excercises extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+  state = {
       data: [
         {
           id: 1,
@@ -37,7 +35,7 @@ export default class Excercises extends Component {
         }
       ]
     };
-  }
+
   render() {
     return (
       <div>
