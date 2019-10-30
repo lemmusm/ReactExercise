@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Welcome from '../components/Welcome';
 import ExerciseList from '../components/ExerciseList';
+import AddButton from '../components/AddButton';
 
 export default class Excercises extends Component {
   constructor(props) {
@@ -42,6 +43,7 @@ export default class Excercises extends Component {
       <div>
         <Welcome username="Manuel" />
         <ExerciseList exercises={this.state.data} />
+        <AddButton/>
       </div>
     );
   }
